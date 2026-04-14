@@ -1,0 +1,63 @@
+MEAN Stack
+    >> M : mongoDB
+    >> E : ExpressJs
+    >> A : Angular
+    >> N : NodeJs
+
+Three Pillars
+    >> HTML (Hyper Text Markup Language)
+    >> CSS (Cascading Stylen Sheets)
+    >> JS (Java Script)
+
+MEAN, MERN (R stands for React), Java Full Stack
+
+Web Dev
+    >> Building/Developers TEam
+    >> Testing Team (Manual Testers/Automated Testers)
+    >> Hosting Team (DevOps Team)
+    >> Maintenance Team/Support Team
+
+SDLC (Software Development Life Cycle)
+    >> WaterFall Model
+    >> Agile Model
+    >> Spiral Model
+    >> Iterative Model
+    >> Incremental Model
+    >> V Shaped Model
+    >> RAD (Rapid Application Development) Model
+
+URL (Uniform Resource Locator)
+    https://www.google.com/
+    https://education.suruAcademy.edu/FullStack
+
+    https: Protocol
+    rohanAcademy: Server/Domain Name
+    education: Sub-Domain
+    .edu: TLD (Top Level Domain)
+    FullStack: Path/Location
+
+Protocol:
+    >> Set of rules/instructions
+        -> http: Hyper Text Transfer Protocol
+        -> https: Hyper Text Transfer Protocol Secure
+        -> tcp: Transmission Control Protocol (Handshake signals)(Much More secure and fast)(connection btw sender and receiver for persistent amount of time)
+        -> udp: User Datagram Protocol (Less secure)
+        -> smtp: Simple Mail Transfer Protocol
+        -> ftp: File Transfer Protocol
+        -> ip: Internet Protocol(IPv4 and IPv6)
+
+SSL: Secure Socket Layer  
+
+Server/Domain NAme:
+    >> Unique Identifier
+        -> Eg.: google
+
+Sub-domain Name:
+    >> gMeet
+    >> gMaps
+
+TLD (Top Level Domain):
+    >> Amazon.in
+    >> Amazon.org
+    >> Amazon.edu
+    >> Amazon.com 
