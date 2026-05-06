@@ -40,7 +40,7 @@ li:first-child a {
 }
 
 li:last-child a {
-    background-color: blue;
+    background-color: rgb(67, 67, 203);
 }
 
 ol>li {
