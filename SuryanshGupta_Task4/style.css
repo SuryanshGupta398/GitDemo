@@ -8,18 +8,19 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 10vh 0;
+    overflow: clip;
 }
 
 .container {
     width: 50vw;
-    height: 78vh;
+    height: 80vh;
     margin: 0 25vw;
     line-height: 0;    
 }
 
 img {
     width: 100%;
-    height: 64vh;
+    height: 66vh;
 }
 
 button {

@@ -6,9 +6,9 @@ In index.html, inside <body> I added a div tag with a class name as "container" 
 
 In style.css, first I used the universal selector '*' to remove the default margin and padding from all the elements and applied 'box-sizing: border-box' so that padding and border are included within an elements total width and height.
 
-Then, I styled the 'body' section using viewport units (vw and vh) to make the webpage responsive according to the screen size and use the 'padding: 10vh 0' to create the 10% spacing from top and bottom.
+Then, I styled the 'body' section using viewport units (vw and vh) to make the webpage responsive according to the screen size and use the 'padding: 10vh 0' to create the 10% spacing from top and bottom. Used the overflow:clip so that content should not scrolled.
 
-After that, I styled the .container class by giving it width as 50vw and height as 78vh (used height as lower to prevent scrolling). I Used margin: 0 25vw  it means 0 margin from top and bottom as we already use the padding as 10vh in body and 25vw margin from left and right. Used line-height as 0 so that there is no space between image and button.
+After that, I styled the .container class by giving it width as 50vw and height as 80vh. I Used margin: 0 25vw  it means 0 margin from top and bottom as we already use the padding as 10vh in body and 25vw margin from left and right. Used line-height as 0 so that there is no space between image and button.
 
 For the image styling, I set width: 100% and used the viewport height units for the height of the image so that it fits perfectly in the container.
 
@@ -17,8 +17,8 @@ For the button styling, I added full width, used border as none because browsers
 Since container width is 50vw and left and right margins are 25vw, 25vw respectively.
 Total = 50vw + 25vw + 25vw = 100vw.
 
-Since container height is 78vh and top and bottom padding are 10vh, 10vh respectively.
-Total = 78vh + 10vh +10vh = 98vh.
+Since container height is 80vh and top and bottom padding are 10vh, 10vh respectively.
+Total = 80vh + 10vh +10vh = 100vh.
 
 This task helped me in understanding the concept of CSS-unites, box-models, and fonts for creating the interactive webpages.
 
