@@ -12,8 +12,9 @@ body {
 
 .container {
     width: 50vw;
-    height: 78vh;           /*Lesser height so to prevent scrolling.*/
+    height: 80vh;
     margin: 0 25vw;
+    line-height: 0;    
 }
 
 img {
@@ -22,7 +23,7 @@ img {
 }
 
 button {
-    margin-top: -4px;
+    border: none;
     padding: 0.7em 1.5em;
     width: 100%;
     height: 14vh;
