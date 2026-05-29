@@ -17,8 +17,8 @@ For the button styling, I added full width, used border as none because browsers
 Since container width is 50vw and left and right margins are 25vw, 25vw respectively.
 Total = 50vw + 25vw + 25vw = 100vw.
 
-Since container height is 80vh and top and bottom padding are 10vh, 10vh respectively.
-Total = 80vh + 10vh +10vh = 98vh.
+Since container height is 78vh and top and bottom padding are 10vh, 10vh respectively.
+Total = 78vh + 10vh +10vh = 98vh.
 
 This task helped me in understanding the concept of CSS-unites, box-models, and fonts for creating the interactive webpages.
 

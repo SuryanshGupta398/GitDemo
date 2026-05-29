@@ -12,14 +12,14 @@ body {
 
 .container {
     width: 50vw;
-    height: 80vh;
+    height: 78vh;
     margin: 0 25vw;
     line-height: 0;    
 }
 
 img {
     width: 100%;
-    height: 66vh;
+    height: 64vh;
 }
 
 button {
