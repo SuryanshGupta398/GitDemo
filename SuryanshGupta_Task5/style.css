@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    position: relative;
+    margin: 3vh 3vw;
+}
+
+.navbar>ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar>ul>li {
+    display: inline;
+    margin: 0 1.5vw;
+}
+
+.navbar>.logo {
+    position: absolute;
+    left: 3vw;
+    font-weight: bold;
+    color: rgb(90, 88, 88);
+    font-size: 2vw;
+}
+
+.navbar>.username {
+    position: absolute;
+    border: none;
+    border-radius: 12px;
+    padding: 1.5vh 1.5vw;
+    right: 2vw;
+    top: -1vh;
+    background-color: rgb(217, 247, 253);
+    font-weight: bold;
+    color: rgb(0, 204, 255);
+}
+
+.navbar>ul>li>a {
+    color: grey;
+    text-decoration: none;
+}
+
+.navbar>ul>li>a:hover {
+    color: aqua;
+}
+
+.left-div {
+    position: absolute;
+    width: 32vw;
+    top: 26vh;
+    left: 8vw;
+}
+
+.desc {
+    display: block;
+    font-weight: bold;
+    line-height: 9vh;
+    color: rgb(90, 88, 88);
+    font-size: 3vw;
+}
+
+.laundary {
+    color: rgb(0, 177, 253);
+    display: block;
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 9vh;
+}
+
+p {
+    color: rgb(195, 192, 192);
+    line-height: 3.5vh;
+    font-size: 1.2vw;
+}
+
+button {
+    background-color: rgb(0, 177, 253);
+    color: white;
+    padding: 2vh 3vw;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right-div {
+    position: absolute;
+    width: 40vw;
+    top: 20vh;
+    right: 10vw;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+    max-height: 55vh;
+    display: block;
+    margin: 0 auto;
+}
