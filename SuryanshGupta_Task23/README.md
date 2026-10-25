@@ -1,0 +1,33 @@
+In this task, I have created the Greenwood Public Library website using HTML and Tailwind CSS to create a highly interactive, visually clean, and animation-enhanced landing page.
+
+For this, I created an index.html, inside it in head tag added the Tailwind CSS CDN script to use Tailwind CSS utility classes.
+
+Inside the body, I first created a div for navigation bar with sticky at top-0 with flex, items-center and justify-between classes along with some padding. On left side, I added the logo text with a small badge and in middle place the navigation links which is made by using the unordered list in class write hidden so in small screen it becomes hidden and used the Taileind CSS pseudo-elements such as after: and hover: utilities to create an animated underline effect when hovered. On right side I added a Visit Us button, which is hidden on small screens using hidden and visible in large screen sm:block.
+
+Then after navigation bar, I created the main content of the website inside the main tag. Inside it, I designed the home section inside section tag use flex and direction as column in small screens and row in large screen to display the content clearly and create a div inside it use flex and direction as column with a large heading, a short description, and two buttons: Explore Collection and Join Free. Then create another div with flex to display the library image and added a hover zoom effect using hover:scle-105 and transition classes.
+
+Then, I created a statistics section to display the information about the library, including the number of books and journals, years of service, free wi-fi, and dedicated sections. I used CSS grid with grid-cols-2 on small screens and sm:grid-cols-4 on larger screens to make the layout responsive.
+
+After that, I created the Our Sections using section tag. Inside it, create a div tag using a CSS grid with grid-cols-1 on small screen and grid-cols-2 on large screens. It contains six categories: Fictions & Literature, Children's Corner, science & Technology, History & Culture, Periodicals & Newspapers, and Digital Media Lab. Each category has a heading, descripton, and browisng link. I created it using flex with direction as column, background and text colors, and added hover effects so when hovered show different background and text colors to make the cards visually appealing.
+
+Then, I created the Our Spaces gallery section to show the different areas of the library. Inside it create a div tag using CSS grid with grid-cols-1 on small screens and grid-cols-2 on large screens. Inside it, each card is created with div to show using flex and direction as column, it contains another div which contain image with rounded corners when hovering it create zoom animations to enhance the visual appearance, the library space name and the floor in badge. 
+
+Next, I created the Why Greenwood section with six cards higlighting the library's values, community, history, events, digital facilities,a nd accessiblity. Each card is created using an asymmetrical bento-style grid layout with different background-colors and hover effects for each card. First and fourth card having col-span-2 means taking two columns while others normal.
+
+After this, I added an introductory section, inside this created div tag for aligning the headings and paragraphs used flex and direction as columns for this. Write the heading then below it create another div with columns-1 sm:columns-2 classes to display the paragraphs in one column on small screens and two columns on larger screens.
+
+After this, I created the Membership section with four cards. First it contains the heading and button on right side with hover effect. Below it create div tag contains responsive grid with grid-cols-1 one column on small screen and sm:grid-cols-4 four column on larger screens. The first card introduces the membership plans, while other display Basic, Student, and family membership options with images, prices, benefits, and buttons. Images and buttons having the hover effect.
+
+Then added a testimonial section featuring a library visitor's experience. Created a div tag using flex with direction as column in small screens and direction as row in larger screens. Inside it create an image tag to display the image as black and white when hovered become colurful this done using grayscale. Beside it write the quote using blockquote, below it write the visitor name.
+
+Now, I created the contact section inside it created div using flex with direction as column, background as emerald. Inside it, write the library address, opening hours, phone number, email address and a Get Direction button.
+
+After that, I created the Events section to display the upcoming library activities, including a Summer Reading Challenge, Book club, Digital Literacy Workshop, and Author Meet. First it contains the heading and on right side the button of All Events. Below it, there are four cards that tells the upcoming events for display them used responsive grid with grid-cols-1 one column on small screen and sm:grid-cols-4 four column on larger screens. Each card or event includes an image, a short description, and a date.
+
+Finally, after the main section I created the footer with flex and direction as column to display links and the copyright section. It contains the Greenwood logo, social media links, page, navigation links, and contact details. Inside footer create div tag with responsive grid grid-cols-2 two columns in smaller screens grid-cols-4 in larger screens. Below it, write the four parts, in logo part used the col-span-2 for spanning two columns in small screens and col-span-1 for spanning only one column, it contains the social media links with hover effect. The navigation links and sections links are display using flex with underline animated transition when hovered. Create another div to display copyright notice for 2026, along with Privacy and Terms text which displayed using flex.
+
+Throughout the website, I used the Tailwind CSS utility classes for spacing, typography, colors, borders, responsive layouts, hover effects, image scaling, and transitions. I also connected the navbar and footer links to their corresponding sections using HTML id attribtes and anchor links, allowing user to navigate directly to different parts of the webpage.
+
+While making this website, I understand the concepts of Tailwind CSS utility classes for spacing, typography colors, borders, responsive layouts, hover effects, image scaling, and transitions.
+
+To run this project, open it in VS code, install the live server extension. Then in bottom right corner there is a option "Go Live" click it, then the webpage will open in the browser showing the created Greenwood Public Library website.
