@@ -1,0 +1,17 @@
+In this task, I have created a web page that displays student records using HTML and JavaScript. And each card shows the student details such as name, marks, class and address. And a search box is implemented to filter students by name.
+
+For this task, I have created three files index.html, style.css, and script.js. In index.html, inside head tag link the style.css using <link> tag and inside body tag add the <script> tag and link to script.js.
+
+In index.html, created a div tag with class navbar to create a navigation bar. In style.css, make its background-color as white, position sticky at top 0 and display as flex to put greet on left side and login button on right side, use align-items as center with some padding and border. Inside it, create another div tag with class name as greet inside it use h3 tag to greet in style.css increase the font-size change the color. After div, add the button tag with class as login, for its styling make the font weight bold give color, some padding. 
+
+Now, created another div with class as content give some padding, inside it create another div with class as search, for its styling give background color as white, position as sticky, display as flex to keep the elements aligned properly and other styling, inside it create another div which includes the input field for its styling give full width, padding, border radius it also include a search icon for its styling make the position absolute and give top and left space to put it inside input field. After this div, add the button with id as searchBtn for searching for its styling give some padding, border-radius, background,etc.
+
+After this, add the p tag with id as searchResultText to display what we are searching for, in style.css give margin, color, font-size. Then created div with class as container and id as student to display the student cards for its styling give margin top, use display as grid direction as columns.
+
+In script.js, first add the student details like name, marks, class, address. Then fetch the container div from index.html using document.getElementById where we have to display the records of student. Next, created function displayStudents passed student as parameter. Inside it, using innerHTML map the each student detail to display in card, using innerHTML because I am putting div tag class name as card, inside it paragraph to display student details. For card styling, in style.css, give the padding, background-color. Then call the function.
+
+Now, for searching functionality fetch the input field, search button and result text and store in some variables. Now create searchStudents function inside it trimming and lowercase the searching text, then using filter to display only the searched students. If input field is empty then no text is displayed, else if filteredStudents length is 0 then display the text no result found, else display search results for text in input field. Then inside function called the displayStudents(filteredStudent). Outside the function adding the eventlistener click on the button to display the searched students.
+
+Through this task, I understand how to use map for mapping the data and display in screen and filter for filtering the content from data.
+
+To run this task, open it in VS Code install the live server extension. Then on bottom right corner click on the Go Live option. Then the page open in web browser display the cards. Write the name or starting letter in search field and click the search button then the result will display.
