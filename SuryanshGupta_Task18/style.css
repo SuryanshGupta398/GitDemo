@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.top {
+    height: 60px;
+    background-color: rgb(239, 236, 236);
+    text-align: center;
+    align-content: center;
+}
+
+.top #text {
+    font-weight: lighter;
+}
+
+.middle {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid #999;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.bottom input {
+    padding: 8px;
+}
+
+.bottom button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #c7c7c7;
+}
