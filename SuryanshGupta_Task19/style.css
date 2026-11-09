@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    padding: 10px 80px;
+}
+
+.logo {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    margin: 10px;
+    padding: 4px;
+    text-decoration: none;
+    color: #777;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 247, 253);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.user {
+    color: rgb(46, 196, 246);
+    font-weight: bold;
+    padding: 9px 12px;
+}
+
+.profile .logout {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(239, 201, 201);
+    padding: 11px 10px;
+}
+
+.profile .logout img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.content {
+    height: auto;
+    background-color: rgb(236, 240, 244);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 70px;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.cart-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.cart-section .add {
+    text-align: center;
+    padding: 10px;
+    color: #444;
+}
+
+.left .cart {
+    flex: 1;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+thead {
+    background: #f5f7f9;
+}
+
+th, tr {
+    font-size: 13px;
+    color: #333;
+    text-align: left;
+    padding: 10px;
+}
+
+th:first-child, td:first-child {
+    width: 5%;
+}
+
+th.service, td.service {
+    width: 50%;
+}
+
+th:last-child, td:last-child {
+    width: 35%;
+    text-align: center;
+    padding-right: 20px;
+}
+
+#cart-items tr {
+    background-color: white;
+    border-collapse: collapse;
+    padding: 10px;
+    border-top: 1px solid #cfd1d3;
+}
+
+#cart-items td {
+    font-size: 12px;
+    color: #777;
+    background-color: white;
+    padding: 10px;
+}
+
+.left .items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 8px;
+}
+
+.items .icon {
+    position: relative;
+    align-content: center;
+    color: #444;
+    font-size: large;
+    font-weight: bold;
+    height: 20px;
+    border: 4px solid #444;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.icon p {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    align-self: center;
+}
+
+.items p {
+    color: #444;
+    font-weight: bold;
+}
+
+.items small {
+    color: #777;
+}
+
+.left .amount {
+    border-top: 1px solid #c7c6c6;
+    padding: 5px;
+}
+
+.amount thead {
+    background-color: white;
+}
+
+.amount th:first-child {
+    width: 65%;
+    text-align: left;
+    color: #111;
+    font-size: medium;
+}
+
+.amount th:last-child {
+    width: 35%;
+    text-align: center;
+    color: #111;
+    font-size: medium;
+}
+
+.book {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c7c6c6;
+    border-radius: 10px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #c7c6c6;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+}
+
+.email-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.email-phone div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.book .btn {
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(200, 200, 236);
+}
+
+.btn.active {
+    background-color: #5555e9;
+}
+
+.book .info {
+    display: none;
+    color: rgb(255, 13, 0);
+}
+
+.right {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.service-card {
+    padding: 20px 0;
+}
+
+.service-card img {
+    width: 100%;
+    height: 310px;
+}
+
+.service-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-info h4 {
+    font-size: 20px;
+}
+
+.service-info strong {
+    color: #5555e9;
+    font-size: 20px;
+}
+
+.service-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.service-buttons button {
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.skip {
+    font-weight: bold;
+    font-size: 16px;
+    flex: 0.3;
+    background-color: rgb(248, 235, 235);
+    color: rgb(255, 13, 0);
+}
+
+.add-item {
+    flex: 0.7;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(228, 248, 228);
+    color: green;
+}
+
+.note {
+    color: #5555e9
+}
+
+#end-message {
+    display: none;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 20px auto;
+    background-color: #f3eefe;
+    border-radius: 12px;
+    color: #6c3bbf;
+    width: 80%;
+}
+
+#end-message h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#end-message p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#restart-btn {
+    background-color: #7b4bc4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 22px;
+    font-size: 14px;
+}

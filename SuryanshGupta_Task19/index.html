@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">Logo</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+
+        <div class="profile">
+            <span class="user">Username</span>
+            <div class="logout">
+                <img src="./assets/logout.png" alt="Logout">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="cart-section">
+                <h3 class="add">Added Items</h3>
+                <div class="cart">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th class="service">Service Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="items" id="empty-cart">
+                    <div class="icon">
+                        <p>i</p>
+                    </div>
+                    <p>No Items Added</p>
+                    <small>Add items to the cart from the services bar</small>
+                </div>
+
+                <div class="amount">
+                    <table>
+                        <thead>
+                            <th>Total Amount</th>
+                            <th id="total">₹ 0</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <div class="book">
+                <h4>Book Now</h4>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="John Doe">
+                <div class="email-phone">
+                    <div>
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" placeholder="mailid@gmail.com">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="0000000000">
+                    </div>
+                </div>
+                <button class="btn" id="book-btn">Book Now</button>
+                <div class="info" id="book-info">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div>
+                <h3>Browse Our Services</h3>
+                <p>Click on the add to cart button to add the services to your cart or press skip</p>
+            </div>
+            <div>
+                <div class="service-card">
+                    <img id="service-image" src="" alt="Laundary Service">
+                    <div class="service-info">
+                        <h4 id="service-name"></h4>
+                        <strong id="service-price"></strong>
+                    </div>
+                </div>
+
+                <div id="end-message">
+                    <h3>All Services Explored!</h3>
+                    <p>You've viewed all our laundary services.</p>
+                    <button id="restart-btn">Explore Again</button>
+                </div>
+
+                <div class="service-buttons" id="service-button">
+                    <button class="skip" id="skip-btn">Skip Item ⊖</button>
+                    <button class="add-item" id="add-btn">Add Item ⊕</button>
+                </div>
+            </div>
+
+            <div class="note" id="note">
+                ⓘ Add the items to the cart and book now
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
