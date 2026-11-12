@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+}
+
+.navbar>ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+}
+
+.logo {
+    font-weight: bold;
+    color: rgb(90, 88, 88);
+    font-size: 2rem;
+}
+
+.navbar>.username {
+    border: none;
+    border-radius: 12px;
+    padding: 2.5vh 1.5vw;
+    background-color: rgb(217, 247, 253);
+    font-weight: bold;
+    color: rgb(0, 204, 255);
+    cursor: pointer;
+}
+
+.navbar>ul>li>a {
+    position: relative;
+    transition: color 200ms ease;
+    color: grey;
+    text-decoration: none;
+}
+
+.navbar>ul>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    height: 0.125rem;
+    width: 100%;
+    background-color: rgb(0, 177, 253);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar>ul>li>a:hover::after {
+    transform: scaleX(1);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    padding: 0 8vw;
+}
+
+.left-div {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.left-div h1 {
+    color: #555;
+    font-size: 3rem;
+    line-height: 1.3;
+}
+
+.laundary {
+    color: rgb(0, 177, 253);
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.left-div p {
+    color: rgb(195, 192, 192);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+button {
+    align-self: start;
+    background-color: rgb(0, 177, 253);
+    color: white;
+    padding: 3vh 4vw;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right-div {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 80%;
+    max-height: 55vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.achievements {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 177, 253);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw;
+}
+
+.service-achievement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.achievement {
+    padding: 40px;
+}
+
+.achievement p {
+    color: #222;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.achievement small {
+    color: #333;
+    font-weight: 600;
+}
+
+.services {
+    background-color: rgb(236, 240, 244);
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px;
+}
+
+.left {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 18px;
+    justify-content: space-between;
+}
+
+.left div p {
+    color: #777;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.middle {
+    display: flex;
+    border-top: 1px solid #c9c8c8;
+    border-bottom: 1px solid #c9c8c8;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    display: inline;
+    width: 20px;
+}
+
+.dot {
+    color: #c9c8c8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price {
+    color: #5555e9;
+}
+
+.add-item {
+    background-color: #ececee;
+    color: #444;
+    padding: 15px 35px;
+}
+
+.note {
+    color: #5555e9
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.cart-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.cart-section .add {
+    text-align: center;
+    padding: 10px;
+    color: #444;
+}
+
+.right .cart {
+    flex: 1;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+thead {
+    background: #f5f7f9;
+}
+
+th, tr {
+    font-size: 13px;
+    color: #333;
+    text-align: left;
+    padding: 10px;
+}
+
+th:first-child, td:first-child {
+    width: 5%;
+}
+
+th.service-name, td.service-name {
+    width: 50%;
+}
+
+th:last-child, td:last-child {
+    width: 35%;
+    text-align: center;
+    padding-right: 20px;
+}
+
+#cart-items tr {
+    background-color: white;
+    border-collapse: collapse;
+    padding: 10px;
+    border-top: 1px solid #cfd1d3;
+}
+
+#cart-items td {
+    font-size: 12px;
+    color: #777;
+    background-color: white;
+    padding: 10px;
+}
+
+.right .items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 8px;
+}
+
+.items .icon {
+    position: relative;
+    align-content: center;
+    color: #444;
+    font-size: large;
+    font-weight: bold;
+    height: 20px;
+    border: 4px solid #444;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.icon p {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    align-self: center;
+}
+
+.items p {
+    color: #444;
+    font-weight: bold;
+}
+
+.items small {
+    color: #777;
+}
+
+.right .amount {
+    border-top: 1px solid #c7c6c6;
+    padding: 5px;
+}
+
+.amount thead {
+    background-color: white;
+}
+
+.amount th:first-child {
+    width: 65%;
+    text-align: left;
+    color: #111;
+    font-size: medium;
+}
+
+.amount th:last-child {
+    width: 35%;
+    text-align: center;
+    color: #111;
+    font-size: medium;
+}
+
+.book {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c7c6c6;
+    border-radius: 10px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #c7c6c6;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+}
+
+.email-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.email-phone div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.book .btn {
+    width: 100%;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(200, 200, 236);
+}
+
+.btn.active {
+    background-color: #5555e9;
+}
+
+.book .info {
+    display: none;
+    color: rgb(255, 13, 0);
+}
+
+.quality {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 100px;
+    gap: 30px;
+}
+
+.quality-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.quality-description img {
+    width: 70px;
+    align-items: center;
+}
+
+.quality-description h3 {
+    color: #333;
+}
+
+.quality-description small {
+    color: #838282;
+    text-align: center;
+    max-width: 190px;
+}
+
+.newsletter {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 177, 253);
+    width: 100%;
+    gap: 12px;
+}
+
+.heading {
+    color: white;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscription-form {
+    display: inline;
+    display: flex;
+    gap: 10px;
+}
+
+.subscription-form input {
+    color: white;
+    background-color: rgba(254, 253, 253, 0.2);
+    padding-right: 50px;
+    border-radius: 0%;
+    border: none;
+}
+
+.subscription-form ::placeholder {
+    color: #e2e1e1;
+}
+
+#subscribe {
+    background-color: white;
+    color: rgb(0, 177, 253);
+    padding: 15px 65px;
+    border-radius: 0%;
+}
+
+.foot {
+    padding: 50px 100px;
+    background-color: rgb(236, 240, 244);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.foot h4 {
+    margin-bottom: 5px;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-about p {
+    font-size: 15px;
+    color: #888;
+    max-width: 270px;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.links li {
+    padding: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-contact div {
+    color: gray;
+}
+
+.social img {
+    padding: 1px;
+}
+
+.add-item.remove {
+    background-color: rgb(248, 235, 235);
+    color: rgb(255, 13, 0);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        padding: 2vh 7vw;
+    }
+
+    .navbar>.username {
+        padding: 1.5vh 1.5vw;
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3vw;
+    }
+
+    .left-div {
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .left-div h1 {
+        font-size: 2.2rem;
+    }
+
+    .left-div p {
+        font-size: 1.2rem;
+    }
+
+    .left-div button {
+        padding: 2.5vh 5vw;
+        margin-top: 15px;
+        font-size: 0.9rem;
+        border-radius: 20px;
+    }
+
+    .laundary {
+        font-size: 2rem;
+    }
+
+    .right-div {
+        width: 45%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-div img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 426px) {
+    .navbar>ul {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 4vw;
+    }
+
+    .left-div {
+        width: 100%;
+    }
+
+    .left-div h1 {
+        font-size: 2rem;
+    }
+
+    .left-div .laundary {
+        font-size: 2rem;
+    }
+
+    .left-div p {
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+
+    .left-div button {
+        padding: 3vh 12vw;
+        border-radius: 25px;
+    }
+
+    .right-div {
+        width: 100%;
+    }
+
+    .right-div img {
+        width: 70%;
+        padding: 4vh 0;
+    }
+}

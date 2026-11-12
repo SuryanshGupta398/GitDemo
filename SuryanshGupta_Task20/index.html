@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 20</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="navbar">
+            <span class="logo">Logo</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#footer-about">About Us</a></li>
+                <li><a href="#footer-contact">Contact Us</a></li>
+            </ul>
+            <span class="username">Username</span>
+        </div>
+        <div class="hero">
+            <div class="left-div">
+                <h1>Revitalize Your Clothes with Expert <span class="laundary">Laundry Services!</span></h1>
+
+                <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup
+                    and
+                    rediscover the freshness of your clothes today!</p>
+
+                <button id="book-service">Book a service today!</button>
+            </div>
+            <div class="right-div">
+                <img src="./assets/laundaryimage.jpg" alt="Laundary Image">
+            </div>
+        </div>
+    </main>
+
+    <section class="achievements">
+        <div>
+            <h1>Our Achievements</h1>
+        </div>
+        <div class="service-achievement">
+            <div class="achievement">
+                <p>15+</p>
+                <small>Laundary Services</small>
+            </div>
+            <div class="achievement">
+                <p>240+</p>
+                <small>Happy Customers</small>
+            </div>
+            <div class="achievement">
+                <p>2+ Yrs</p>
+                <small>Experience</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="left">
+            <div>
+                <h2>Our Services</h2>
+                <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+            </div>
+            <div class="middle">
+                <div class="service">
+                    <div><img src="./assets/drycleaning.png" alt="dry-cleaning" class="image"> Dry Cleaning <span
+                            class="dot">· </span><strong class="price">₹200.00</strong></div>
+                    <button class="add-item">Add Item ⊕</button>
+                </div>
+                <div class="service">
+                    <div><img class="image" src="./assets/wash&fold.png" alt="fold"> Wash & Fold <span class="dot">·
+                        </span><strong class="price">₹100.00</strong></div>
+                    <button class="add-item">Add Item ⊕</button>
+                </div>
+                <div class="service">
+                    <div><img class="image" src="./assets/iron.png" alt="Ironing"> Ironing <span class="dot">·
+                        </span><strong class="price">₹30.00</strong></div>
+                    <button class="add-item">Add Item ⊕</button>
+                </div>
+                <div class="service">
+                    <div><img src="./assets/stain.png" alt="stain" class="image"> Stain Removal <span class="dot">·
+                        </span><strong class="price">₹500.00</strong></div>
+                    <button class="add-item">Add Item ⊕</button>
+                </div>
+                <div class="service">
+                    <div><img src="./assets/leather.png" alt="Leather" class="image"> Leather & Suede Cleaning <span
+                            class="dot">· </span><strong class="price">₹999.00</strong>
+                    </div>
+                    <button class="add-item">Add Item ⊕</button>
+                </div>
+                <div class="service">
+                    <div><img src="./assets/wedding-dress.png" alt="wedding-dress" class="image"> Wedding Dress Cleaning
+                        <span class="dot">· </span><strong class="price">₹2800.00</strong>
+                    </div>
+                    <button class="add-item">Add Item ⊕</button>
+                </div>
+            </div>
+            <div class="note" id="note">
+                ⓘ Add the items to the cart and book now
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="cart-section">
+                <h3 class="add">Added Items</h3>
+                <div class="cart">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th class="service-name">Service Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="items" id="empty-cart">
+                    <div class="icon">
+                        <p>i</p>
+                    </div>
+                    <p>No Items Added</p>
+                    <small>Add items to the cart from the services bar</small>
+                </div>
+
+                <div class="amount">
+                    <table>
+                        <thead>
+                            <th>Total Amount</th>
+                            <th id="total">₹ 0</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <div class="book">
+                <h4>Book Now</h4>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="John Doe">
+                <div class="email-phone">
+                    <div>
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" placeholder="mailid@gmail.com">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="0000000000">
+                    </div>
+                </div>
+                <button class="btn" id="book-btn">Book Now</button>
+                <div class="info" id="book-info">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality">
+        <div class="quality-description">
+            <img src="./assets/washing-machine.png" alt="Premium Service">
+            <h3>Premium Services</h3>
+            <small>Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as
+                new.</small>
+        </div>
+        <div class="quality-description">
+            <img src="./assets/support.png" alt="Quick-support">
+            <h3>Quick Support</h3>
+            <small>We're committed to providing prompting solutions to ensure your experience is smooth and
+                worry-free.</small>
+        </div>
+        <div class="quality-description">
+            <img src="./assets/delivered.png" alt="hassle-free-delivery">
+            <h3>Hassle Free Delivery</h3>
+            <small>Enjoy seamless service with our convenient pickup and delivery options, tailored to your
+                schedule.</small>
+        </div>
+        <div class="quality-description">
+            <img src="./assets/cost.png" alt="affordable-price">
+            <h3>Affordable Prices</h2>
+                <small>Experience exceptional care without breaking the bank - our affordable prices make laundary day
+                    stress-free.</small>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h1 class="heading">Subscribe to our newsletter.</h1>
+        <div class="subscription">
+            <div class="subscription-form">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <button id="subscribe">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="footer-about" id="footer-about">
+                <span class="logo">Logo</span>
+                <div>
+                    <h4>About us</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, optio.</p>
+                </div>
+            </div>
+            <div>
+                <h4>Important Links</h4>
+                <ul class="links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact" id="footer-contact">
+                <h4>Contact</h4>
+                <div>
+                    <a href="mailto:mail@site.com">mail@site.com</a>
+                    <div>+91 91234 56780</div>
+                </div>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="social">
+                    <a href="https://www.instagram.com">
+                        <img src="./assets/instagram.png" alt="Instagram" class="image"></a>
+                    <a href="https://www.facebook.com"><img src="./assets/social.png" alt="Facebook" class="image"></a>
+                    <a href="https://www.twitter.com"><img src="./assets/twitter.png" alt="Twitter" class="image"></a>
+                    <a href="https://www.youtube.com"><img src="./assets/play.png" alt="Youtube" class="image"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="email.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
