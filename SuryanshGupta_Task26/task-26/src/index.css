@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+    --animate-gradient: gradient 10s ease-in-out infinite;
+
+    @keyframes gradient {
+        from {
+            background-position: 0% 100%;
+        }
+
+        to {
+            background-position: 100% 0%;
+        }
+    }
+}
+
+.animated-border {
+    background: linear-gradient(to top right, red, blue, yellow, green, red, blue);
+    background-size: 600% 500%;
+}
